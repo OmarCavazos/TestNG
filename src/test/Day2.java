@@ -11,7 +11,7 @@ public class Day2 {
 	
 	@BeforeTest
 	public void prerequisite() {
-		System.out.println("This will execute before Test: Personal Loan<----");
+		System.out.println("This will execute before Test: Personal Loan");
 	}
 
 }

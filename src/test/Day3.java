@@ -35,7 +35,7 @@ public class Day3 {
 	
 	@BeforeMethod
 	public void BfEvery() {
-		System.out.println("I will execute before every test method in day 3 class <--- ");
+		System.out.println("I will execute before every test method in day 3 class");
 	}
 	
 	@AfterMethod
@@ -66,7 +66,7 @@ public class Day3 {
 	
 	@BeforeSuite
 	public void BfSuite() {
-		System.out.println("This will execute before everything <--- ");
+		System.out.println("This will execute before everything");
 	}
 	
 	@AfterSuite
