@@ -3,7 +3,23 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="test.IntroTestNG"/>
+      <class name="test.Day3"/>
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="test.Day3">
+        <methods>
+          <include name="afclass"/>
+          <include name="befoclas"/>
+          <include name="BfEvery"/>
+          <include name="BfSuite"/>
+          <include name="WebloginCarLoan"/>
+          <include name="APICarLoan"/>
+          <include name="AfSuite"/>
+          <include name="AfterEvery"/>
+        </methods>
+      </class> <!-- test.Day3 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

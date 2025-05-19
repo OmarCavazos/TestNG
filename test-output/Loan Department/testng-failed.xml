@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <parameter name="APIKey/username" value="123456"/>
+  <parameter name="URL" value="carloan.com"/>
   <test thread-count="5" name="Personal Loan">
+    <parameter name="URL" value="personalloan.com"/>
     <classes>
       <class name="test.Day1">
         <methods>
@@ -13,6 +16,8 @@
     </classes>
   </test> <!-- Personal Loan -->
   <test name="Car Loan">
+    <parameter name="APIKey/username" value="123456"/>
+    <parameter name="URL" value="carloan.com"/>
     <classes>
       <class name="test.Day3">
         <methods>
